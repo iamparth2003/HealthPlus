@@ -1,0 +1,61 @@
+﻿body {
+}
+
+.wrapper
+{
+    width:1000px;
+    margin:auto;
+  
+}
+#header
+{
+    width: 1000px;
+    height: 150px;
+    background-color:#a1b9ea;
+    color: White;
+    background:url(../image/header.jpg);
+}
+.menu
+{
+    width: 1000px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #00FFFF;
+     background-color: #3366CC;
+}
+.content
+{
+    width: 1000px;
+    min-height: 400px;
+    height: auto;
+    line-height: 2;
+}
+
+#login {
+    float:right;
+    padding-right:10px;
+    color:white;
+}
+#footer
+{
+    width: 1000px;
+    height: 50px;
+    background-color: #3366CC;
+    color: White;
+    text-align: center;
+}
+.panel {
+    line-height:2;
+    padding:10px 10px 10px 10px;
+    border:solid 2px grey;
+     background-color: #3366CC;
+     color:white;
+}
+input[type="submit"] {
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: medium;
+    border:none
+}

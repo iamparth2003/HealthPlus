@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user_Master.master.cs" Inherits="user_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/StyleSheet.css" type="text/css" rel="Stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div class="wrapper">
+    <div id="header">
+   
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+        <div id="login">
+       <asp:Label ID="Label2" runat="server"></asp:Label>
+       &nbsp;<asp:LinkButton ID="Lank_login" runat="server" OnClick="Lank_login_Click">Login</asp:LinkButton>
+   </div>
+        <asp:Image ID="Image1" runat="server" Height="119px" ImageUrl="~/image/logo.png" />
+    </div>
+    <asp:Menu ID="Menu1" runat="server" CssClass="menu" 
+            onmenuitemclick="Menu1_MenuItemClick" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem Text="About us" Value="About us"></asp:MenuItem>
+                <asp:MenuItem Text="Doctors" Value="Doctors"></asp:MenuItem>
+                <asp:MenuItem Text="Contact us" Value="Contact us"></asp:MenuItem>
+                <asp:MenuItem Text="Feedback" Value="Feedback"></asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle ForeColor="White" Width="120px" />
+        </asp:Menu>
+    <div class="content">
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">Devolvped By : Dobariya Yash,Asodariya Parth<br />
+        </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
